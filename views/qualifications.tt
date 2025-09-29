@@ -1,0 +1,14 @@
+
+<h1>資格一覧</h1>
+<table border="1" cellpadding="6">
+  <tr>
+    <th>ID</th><th>資格名</th><th>価格</th>
+  </tr>
+  <% FOREACH item IN items %>
+    <tr>
+      <td><% item.id %></td>
+      <td><% item.name %></td>
+      <td><% item.price %> 円</td>
+    </tr>
+  <% END %>
+</table>
