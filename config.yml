@@ -27,21 +27,21 @@ charset: "UTF-8"
 # tiny: default basic template engine
 # template_toolkit: TT
 
-template: "tiny"
-engines:
-  template:
-    tiny:
-      # Note: start_tag and end_tag are regexes
-      start_tag: '<%'
-      end_tag:   '%>'
-
-# template: "template_toolkit"
+# template: "tiny"
 # engines:
 #   template:
-#     template_toolkit:
+#     tiny:
 #       # Note: start_tag and end_tag are regexes
 #       start_tag: '<%'
 #       end_tag:   '%>'
+
+template: "template_toolkit"
+engines:
+  template:
+    template_toolkit:
+      # Note: start_tag and end_tag are regexes
+      start_tag: '<%'
+      end_tag:   '%>'
 
 # session engine
 #
