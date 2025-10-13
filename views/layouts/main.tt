@@ -11,8 +11,7 @@
   <% include 'partials/header.tt' %>
 
   <% content %>
-  <div id="footer">
-    Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
-  </div>
+
+  <% include 'partials/footer.tt' %>
 </body>
 </html>
